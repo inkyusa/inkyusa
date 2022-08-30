@@ -1,6 +1,12 @@
 ### Hi there 👋
+I’m currently interested in ...
 
-![enddl22](https://road-to-kaggle-grandmaster.vercel.app/api/simple/{enddl22})
+![enddl22](https://road-to-kaggle-grandmaster.vercel.app/api/simple/enddl22)
+
+![competition](https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competition/light)
+
+
+
 
 <!--
 **inkyusa/inkyusa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
