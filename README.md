@@ -5,7 +5,7 @@ I’m currently interested in ...
 
 ![competition](https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competition/light)
 
-<img height="50px" src="https://user-images.githubusercontent.com/5215050/187479035-6047ca0c-82ee-41e7-9d25-cad61187127f.png"/>
+<!-- <img height="50px" src="https://user-images.githubusercontent.com/5215050/187479035-6047ca0c-82ee-41e7-9d25-cad61187127f.png"/> -->
 
 [My Kaggle profile](https://www.kaggle.com/enddl22)
 
