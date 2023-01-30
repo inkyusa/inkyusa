@@ -1,11 +1,5 @@
 ### Hi there 👋
-I’m currently interested in ...
-
-![enddl22](https://road-to-kaggle-grandmaster.vercel.app/api/simple/enddl22)
-
-![competition](https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competition/light)
-
-<!-- <img height="50px" src="https://user-images.githubusercontent.com/5215050/187479035-6047ca0c-82ee-41e7-9d25-cad61187127f.png"/> -->
+I’m currently interested in ML...
 
 [My Kaggle profile](https://www.kaggle.com/enddl22)
 
