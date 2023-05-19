@@ -13,6 +13,10 @@ If you are also interested in ML or other state-of-the-art (SOTA) technologies, 
 
 Here is my Kaggle profile page: [My Kaggle profile](https://www.kaggle.com/enddl22)
 
+<!-- 
+<img src="https://kaggle-card.chienhsiang-hung.eu.org/api/svg?enddl22" width="400" alt="Kaggle Summary Card">
+ -->
+ 
 I hope you enjoy Kaggle as much as I do!
 
 ### Github stats
