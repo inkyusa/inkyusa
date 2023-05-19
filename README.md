@@ -1,8 +1,7 @@
 ### Hi there, this is Inkyu 👋
 ---
-My interests are in the fields of field robotics, applied machine learning, and virtual reality. I am particularly interested in the intersection of these technologies and how they can be used to solve real-world problems. For example, I am interested in using field robotics to explore dangerous or inaccessible environments, such as the deep sea or the surface of Mars. I am also interested in using applied machine learning to improve the performance of virtual reality systems, such as by making them more immersive and realistic.
-
-I am always looking for new and interesting ways to apply these technologies. If you have any questions or ideas, please do not hesitate to contact me. I would be happy to discuss them with you.
+My interests are Field Robotics, Applied machine learning, and Virtual Realisty...
+Hope you can find some useful stuffs for you, and should you have questions regarding them, please drop a email.
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=inkyusa&label=Profile%20views&color=0e75b6&style=flat-square" alt="inkyusa" /> </p>
 
