@@ -1,19 +1,19 @@
 ### Hi there, this is Inkyu 👋
 ---
-My interests are Field Robotics, Applied machine learning, and Virtual Realisty...
-Hope you can find some useful stuffs for you, and should you have questions regarding them, please drop a email.
+My interests are Field Robotics, Applied machine learning, and Virtual reality...
+Hope you can find some useful things for you, and should you have questions regarding them, please drop an email.
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=inkyusa&label=Profile%20views&color=0e75b6&style=flat-square" alt="inkyusa" /> </p>
 
 ### My Kaggle profile
 ---
-Kaggle is one of my favorite places to learn and explore new machine learning (ML) technologies. I have found it to be a fun and entertaining playground where I can apply my skills and knowledge to real-world problems.
+Kaggle is one of my favourite places to learn and explore new machine learning (ML) technologies. I have found it to be a fun and entertaining playground where I can apply my skills and knowledge to real-world problems.
 
 If you are also interested in ML or other state-of-the-art (SOTA) technologies, I highly recommend checking out Kaggle. There are a wide range of challenging problems that need to be solved, and Kaggle provides a great platform for learning and collaboration.
 
 ![competition](https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competition/light)
 
-(150/208,193)
+(144/208,193)
 
 ![enddl22](https://road-to-kaggle-grandmaster.vercel.app/api/simple/enddl22)
 
