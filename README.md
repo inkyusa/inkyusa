@@ -1,6 +1,6 @@
 ### Hi there, this is Inkyu 👋
 ---
-My interests are Field Robotics, Applied machine learning, and Virtual reality... [Google Scholar page](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
+My interests are Field Robotics, Applied machine learning, Large-language models, and AI-generated content (AIGC e.g., stable-diffusion) [Google Scholar page](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
 
 I hope you find some useful things for you, and should you have questions regarding them, please email me.
 
@@ -14,7 +14,7 @@ If you are also interested in ML or other state-of-the-art (SOTA) technologies, 
 
 ![competition](https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competition/light)
 
-(151/208,193)
+(144/208,193)
 
 ![enddl22](https://road-to-kaggle-grandmaster.vercel.app/api/simple/enddl22)
 
