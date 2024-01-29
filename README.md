@@ -14,7 +14,7 @@ If you are also interested in ML or other state-of-the-art (SOTA) technologies, 
 
 ![competition](https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competition/light)
 
-(126/218,999 as of 22/Dec/2023)
+(122/223,006 as of 29/Jan/2024, Top 0.05%)
 
 ![enddl22](https://road-to-kaggle-grandmaster.vercel.app/api/simple/enddl22)
 
