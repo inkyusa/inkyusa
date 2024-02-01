@@ -2,6 +2,11 @@
 ---
 My interests are Field Robotics, Applied machine learning, Large-language models, and AI-generated content (AIGC e.g., stable-diffusion) [Google Scholar page](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
 
+# My Google Scholar Citations
+
+![Citations per Year](./citation_histogram.png)
+
+
 I hope you find some useful things for you, and should you have questions regarding them, please email me.
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=inkyusa&label=Profile%20views&color=0e75b6&style=flat-square" alt="inkyusa" /> </p>
