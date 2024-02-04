@@ -4,6 +4,8 @@ My interests are Field Robotics, Applied machine learning, Large-language models
 
 # My Google Scholar Citations
 
+![Citation History](https://vercel-citations.vercel.app/api/simple?id=KxJU37kAAAAJ)
+
 <p align="left"> <img src="https://vercel-citations.vercel.app/api/simple?id=KxJU37kAAAAJ" alt="Citation History" width="600"/> </p>
 
 I hope you find some useful things for you, and should you have questions regarding them, please email me.
