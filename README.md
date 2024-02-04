@@ -2,11 +2,11 @@
 ---
 My interests are Field Robotics, Applied machine learning, Large-language models, and AI-generated content (AIGC e.g., stable-diffusion) [Google Scholar page](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
 
-# My Google Scholar Citations
+# My Google Scholar Citations (under construction..)
 
 ![Citation History](https://vercel-citations.vercel.app/api/simple?id=KxJU37kAAAAJ)
 
-<p align="left"> <img src="https://vercel-citations.vercel.app/api/simple?id=KxJU37kAAAAJ" alt="Citation History" width="600"/> </p>
+
 
 I hope you find some useful things for you, and should you have questions regarding them, please email me.
 
@@ -17,7 +17,7 @@ I hope you find some useful things for you, and should you have questions regard
 Kaggle is one of my favourite places to learn and explore new machine learning (ML) technologies. I have found it to be a fun and entertaining playground where I can apply my skills and knowledge to real-world problems.
 
 If you are also interested in ML or other state-of-the-art (SOTA) technologies, I highly recommend checking out Kaggle. There are a wide range of challenging problems that need to be solved, and Kaggle provides a great platform for learning and collaboration.
-
+<p align="left"> <img src="https://vercel-citations.vercel.app/api/simple?id=KxJU37kAAAAJ" alt="Citation History" width="600"/> </p>
 ![competition](https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competition/light)
 
 (122/223,006 as of 29/Jan/2024, Top 0.05%)
@@ -40,6 +40,10 @@ I hope you enjoy Kaggle as much as I do!
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=inkyusa&show_icons=true&theme=dark&locale=en" alt="inkyusa" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=inkyusa&theme=dark" alt="inkyusa" /></p>
+
+<!--
+<p align="left"> <img src="https://vercel-citations.vercel.app/api/simple?id=KxJU37kAAAAJ" alt="Citation History" width="600"/> </p>
+-->
 
 
 <!--
