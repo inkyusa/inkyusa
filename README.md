@@ -16,12 +16,9 @@ Kaggle is one of my favourite places to learn and explore new machine learning (
 
 If you are also interested in ML or other state-of-the-art (SOTA) technologies, I highly recommend checking out Kaggle. There are a wide range of challenging problems that need to be solved, and Kaggle provides a great platform for learning and collaboration.
 
-![competition](https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competition/light)
+<p align="left"> <img src="assets/kg_profile.png" alt="Kaggle profile" width="300"/> </p>
 
-(122/223,006 as of 29/Jan/2024, Top 0.05%)
-
-![enddl22](https://road-to-kaggle-grandmaster.vercel.app/api/simple/enddl22)
-
+(124/199,921 as of 16/Feb/2024, Top 0.05%)
 
 Here is my Kaggle profile page: [My Kaggle profile](https://www.kaggle.com/enddl22)
 
