@@ -2,7 +2,7 @@
 ---
 My interests are Field Robotics, Applied machine learning, Large-language models, and AI-generated content (AIGC e.g., stable-diffusion).
 
-# [My Google Scholar Citations](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
+### [My Google Scholar Citations](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
 
 <p align="left"> <img src="https://vercel-citations.vercel.app/api/simple?id=KxJU37kAAAAJ" alt="Citation History" width="600"/> </p>
 
