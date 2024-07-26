@@ -18,7 +18,7 @@ If you are also interested in ML or other state-of-the-art (SOTA) technologies, 
 
 <p align="left"> <img src="assets/kg_profile.png" alt="Kaggle profile" width="200"/> </p>
 
-(124/199,921 as of 16/Feb/2024, Top 0.05%)
+(128/205,650 as of 26/July/2024, Top 0.05%)
 
 Here is my Kaggle profile page: [My Kaggle profile](https://www.kaggle.com/enddl22)
 
