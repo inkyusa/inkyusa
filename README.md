@@ -4,7 +4,8 @@ My interests are Field Robotics, Applied machine learning, Large-language models
 
 ### [My Google Scholar Citations](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
 
-![Google scholar](./assets/google_scholar_profile_Mar_28_2025.png)
+<p align="left"> <img src="./assets/google_scholar_profile_Mar_28_2025.png" alt="Citation History" width="300"/> </p>
+
 (updated on Mar/28/2025)
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=inkyusa&label=Profile%20views&color=0e75b6&style=flat-square" alt="inkyusa" /> </p>
