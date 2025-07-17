@@ -2,6 +2,14 @@
 ---
 My interests are Field Robotics, Applied machine learning, Large-language models, and AI-generated content (AIGC e.g., stable-diffusion).
 
+### Highlight repos & projects
+* [3D object retrival tutorial](https://github.com/inkyusa/3D_object_retrieval): a toy example for 3D model retreival either from text or image, both using CLIP embedding and FAISS indexing
+* [deepNIR](https://inkyusa.github.io/deepNIR_dataset/): Dataset for generating synthetic NIR images and improved fruit detection system using deep learning techniques
+* [Fork of Imitation learning algorithms and co-training for Mobile ALOHA](https://github.com/inkyusa/act_vel_added): many bug fixes, velocity feature added, more script for training, validation, and visualisation
+* [weedNet](https://github.com/inkyusa/weedNet): Multispectral crop&weed dataset for semantic segmentation
+* [deepFruits](https://www.kaggle.com/datasets/enddl22/deepnir-11fruits): Kaggle hosted, 11 fruits bounding box annoration datasets
+* [gym rotors](https://github.com/inkyusa/gym_rotor): Old (6yrs) but contains the fundamental toy examples for continuous RL control for a quadrotor
+  
 ### [My Google Scholar Citations](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
 
 <p align="left"> <img src="./assets/google_scholar_profile_Mar_28_2025.png" alt="Citation History" width="300"/> </p>
@@ -18,7 +26,7 @@ If you are also interested in ML or other state-of-the-art (SOTA) technologies, 
 
 <p align="left"> <img src="assets/kg_profile.png" alt="Kaggle profile" width="200"/> </p>
 
-(128/205,650 as of 26/July/2024, Top 0.05%)
+(187/203,065 as of July/17/2025, Top 0.05%)
 
 Here is my Kaggle profile page: [My Kaggle profile](https://www.kaggle.com/enddl22)
 
