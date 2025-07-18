@@ -4,6 +4,7 @@ My interests are Field Robotics, Applied machine learning, Large-language models
 
 ### Highlight repos & projects
 * [3D object retrival tutorial](https://github.com/inkyusa/3D_object_retrieval): a toy example for 3D model retreival either from text or image, both using CLIP embedding and FAISS indexing
+* [GenAI game scene generation](https://inkyusa.itch.io/low-poly-ai-generated-mid-age): Unity + object retrival + difussion + mono depth estimation demo (no code base available, but only sample playing)
 * [deepNIR](https://inkyusa.github.io/deepNIR_dataset/): Dataset for generating synthetic NIR images and improved fruit detection system using deep learning techniques
 * [Fork of Imitation learning algorithms and co-training for Mobile ALOHA](https://github.com/inkyusa/act_vel_added): many bug fixes, velocity feature added, more script for training, validation, and visualisation
 * [weedNet](https://github.com/inkyusa/weedNet): Multispectral crop&weed dataset for semantic segmentation
