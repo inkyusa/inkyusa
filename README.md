@@ -15,7 +15,7 @@ My interests are Field Robotics, Applied machine learning, Large-language models
 
 <p align="left"> <img src="./assets/google_scholar_profile_Nov_7_2025.png" alt="Citation History" width="300"/> </p>
 
-(updated on July/17/2025)
+(updated on Nov/7/2025)
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=inkyusa&label=Profile%20views&color=0e75b6&style=flat-square" alt="inkyusa" /> </p>
 
