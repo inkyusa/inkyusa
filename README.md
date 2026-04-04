@@ -23,16 +23,19 @@ Kaggle is one of my favourite places to learn and explore new machine learning (
 
 If you are also interested in ML or other state-of-the-art (SOTA) technologies, I highly recommend checking out Kaggle. There are a wide range of challenging problems that need to be solved, and Kaggle provides a great platform for learning and collaboration.
 
-<p align="left"> <img src="assets/kg_profile.png" alt="Kaggle profile" width="300"/> </p>
+Live tier cards (auto-refreshed on every view):
 
-(187/203,065 as of July/17/2025, Top 0.05%)
+<p align="left">
+  <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competitions" alt="Competitions" />
+  <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/datasets" alt="Datasets" />
+  <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/notebooks" alt="Notebooks" />
+  <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/discussion" alt="Discussion" />
+</p>
+
+<p align="left"> <img src="assets/kg_profile.png" alt="Kaggle profile" width="300"/> </p>
 
 Here is my Kaggle profile page: [My Kaggle profile](https://www.kaggle.com/enddl22)
 
-<!-- 
-<img src="https://kaggle-card.chienhsiang-hung.eu.org/api/svg?enddl22" width="400" alt="Kaggle Summary Card">
- -->
- 
 I hope you enjoy Kaggle as much as I do!
 
 ### Github stats
