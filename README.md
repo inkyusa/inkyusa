@@ -13,7 +13,7 @@ My interests are Field Robotics, Applied machine learning, Large-language models
   
 ### [My Google Scholar Citations](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
 
-<p align="left"> <img src="./assets/google_scholar_profile_Nov_7_2025.png" alt="Citation History" width="300"/> </p>
+<p align="left"> <img src="./assets/google_scholar_profile.png" alt="Citation History" width="300"/> </p>
 
 (updated on Nov/7/2025)
 
