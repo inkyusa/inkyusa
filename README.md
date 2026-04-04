@@ -43,13 +43,7 @@ I build systems at the intersection of **robotics**, **computer vision**, and **
     <img src="./assets/kaggle_light.png" alt="Kaggle profile stats" width="780"/>
   </picture>
 </p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competitions">
-    <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competitions/light" alt="Competitions tier"/>
-  </picture>
-</p>
-<p align="center"><sub>Auto-refreshed weekly from the Kaggle API.</sub></p>
+<p align="center"><sub>Dataset/notebook counts auto-refreshed weekly from the Kaggle API.</sub></p>
 
 Kaggle is one of my favourite playgrounds for exploring new ML ideas on real-world data. Full profile → [kaggle.com/enddl22](https://www.kaggle.com/enddl22).
 

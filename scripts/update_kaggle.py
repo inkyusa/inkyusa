@@ -31,6 +31,24 @@ USERNAME = os.environ.get("KAGGLE_USERNAME", "")
 API_KEY = os.environ.get("KAGGLE_KEY", "")
 PROFILE = os.environ.get("KAGGLE_PROFILE", USERNAME)
 
+# Competitions profile info — Kaggle's API does not expose per-user rank
+# or medal counts, so these are configurable. Update when your tier or
+# medal count changes (rare events). Defaults reflect inkyu's profile.
+COMP_TIER = os.environ.get("KAGGLE_COMP_TIER", "Expert")
+COMP_RANK = int(os.environ.get("KAGGLE_COMP_RANK", "185"))
+COMP_TOTAL = int(os.environ.get("KAGGLE_COMP_TOTAL", "202826"))
+COMP_GOLD = int(os.environ.get("KAGGLE_COMP_GOLD", "0"))
+COMP_SILVER = int(os.environ.get("KAGGLE_COMP_SILVER", "4"))
+COMP_BRONZE = int(os.environ.get("KAGGLE_COMP_BRONZE", "15"))
+
+TIER_COLORS = {
+    "Grandmaster": "#FFC107",
+    "Master":      "#FF6F00",
+    "Expert":      "#96508e",
+    "Contributor": "#00BF80",
+    "Novice":      "#5AC995",
+}
+
 THEMES = {
     "light": {
         "bg": "#ffffff",
@@ -107,25 +125,68 @@ def _fmt(n: int) -> str:
 
 def _render(stats: dict, theme: str) -> None:
     t = THEMES[theme]
-    fig = plt.figure(figsize=(7.2, 2.8), dpi=160, facecolor=t["bg"])
+    fig = plt.figure(figsize=(7.2, 3.6), dpi=160, facecolor=t["bg"])
 
+    # --- header ---
     fig.text(
-        0.05, 0.84,
+        0.05, 0.90,
         f"Kaggle · {PROFILE}",
         color=t["fg"], fontsize=13, fontweight="bold",
     )
     fig.text(
-        0.95, 0.84,
+        0.95, 0.90,
         f"Updated {_dt.date.today():%Y-%m-%d}",
         color=t["muted"], fontsize=8, ha="right", va="baseline",
     )
 
     # Separator
-    ax = fig.add_axes([0.05, 0.76, 0.90, 0.003])
+    ax = fig.add_axes([0.05, 0.85, 0.90, 0.003])
     ax.set_facecolor(t["border"]); ax.set_xticks([]); ax.set_yticks([])
     for s in ax.spines.values():
         s.set_visible(False)
 
+    # --- competitions highlight ---
+    tier_color = TIER_COLORS.get(COMP_TIER, t["primary"])
+    pct = COMP_RANK / COMP_TOTAL * 100 if COMP_TOTAL else 0
+    fig.text(0.05, 0.74, "COMPETITIONS",
+             color=t["muted"], fontsize=8, fontweight="bold")
+    fig.text(0.05, 0.64, COMP_TIER,
+             color=tier_color, fontsize=16, fontweight="bold")
+    fig.text(
+        0.22, 0.64,
+        f"#{COMP_RANK:,}",
+        color=t["fg"], fontsize=16, fontweight="bold",
+    )
+    fig.text(
+        0.22, 0.555,
+        f"of {COMP_TOTAL:,}  ·  Top {pct:.2f}%",
+        color=t["muted"], fontsize=9,
+    )
+
+    # Medals
+    medals_x = 0.58
+    medal_defs = [
+        ("Gold", COMP_GOLD, "#E1B43C"),
+        ("Silver", COMP_SILVER, "#B0B6BD"),
+        ("Bronze", COMP_BRONZE, "#C1802F"),
+    ]
+    for i, (name, count, color) in enumerate(medal_defs):
+        x = medals_x + i * 0.13
+        fig.text(x, 0.655, "●",
+                 color=color, fontsize=16, va="center", ha="center")
+        fig.text(x + 0.022, 0.65, f"{count}",
+                 color=t["fg"], fontsize=14, fontweight="bold",
+                 va="center")
+        fig.text(x + 0.022, 0.595, name,
+                 color=t["muted"], fontsize=8, va="center")
+
+    # Separator
+    ax = fig.add_axes([0.05, 0.47, 0.90, 0.003])
+    ax.set_facecolor(t["border"]); ax.set_xticks([]); ax.set_yticks([])
+    for s in ax.spines.values():
+        s.set_visible(False)
+
+    # --- KPI row ---
     kpis = [
         ("Datasets", stats["datasets"]),
         ("Notebooks", stats["notebooks"]),
@@ -134,12 +195,12 @@ def _render(stats: dict, theme: str) -> None:
     ]
     xs = [0.07, 0.30, 0.54, 0.78]
     for (label, val), x in zip(kpis, xs):
-        fig.text(x, 0.42, _fmt(val), color=t["primary"],
-                 fontsize=22, fontweight="bold")
-        fig.text(x, 0.22, label, color=t["muted"], fontsize=9)
+        fig.text(x, 0.30, _fmt(val), color=t["primary"],
+                 fontsize=20, fontweight="bold")
+        fig.text(x, 0.14, label, color=t["muted"], fontsize=9)
 
     fig.text(
-        0.05, 0.06,
+        0.05, 0.04,
         f"{stats['ds_views']:,} dataset views · kaggle.com/{PROFILE}",
         color=t["muted"], fontsize=8,
     )
