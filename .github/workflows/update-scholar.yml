@@ -1,0 +1,42 @@
+name: Update Scholar citation chart
+
+on:
+  schedule:
+    - cron: "0 2 * * 1"  # Every Monday 02:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Render Scholar PNG
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          SCHOLAR_AUTHOR: KxJU37kAAAAJ
+        run: python scripts/update_scholar.py
+
+      - name: Commit changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain assets/google_scholar_profile.png)" ]]; then
+            git add assets/google_scholar_profile.png
+            git commit -m "chore: weekly refresh of Scholar citation chart"
+            git push
+          else
+            echo "No changes."
+          fi
