@@ -1,4 +1,4 @@
-name: Update Scholar citation chart
+name: Update profile cards
 
 on:
   schedule:
@@ -23,19 +23,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
 
-      - name: Render Scholar PNG
+      - name: Render Scholar cards
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           SCHOLAR_AUTHOR: KxJU37kAAAAJ
         run: python scripts/update_scholar.py
 
+      - name: Render GitHub stats cards
+        env:
+          GITHUB_USER: inkyusa
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_github_stats.py
+
       - name: Commit changes
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [[ -n "$(git status --porcelain assets/scholar_light.png assets/scholar_dark.png)" ]]; then
-            git add assets/scholar_light.png assets/scholar_dark.png
-            git commit -m "chore: weekly refresh of Scholar citation chart"
+          if [[ -n "$(git status --porcelain assets/)" ]]; then
+            git add assets/*.png
+            git commit -m "chore: weekly refresh of profile cards"
             git push
           else
             echo "No changes."

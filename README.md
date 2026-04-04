@@ -38,10 +38,22 @@ I build systems at the intersection of **robotics**, **computer vision**, and **
 ### 🏆 Kaggle Profile
 
 <p align="left">
-  <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competitions" alt="Competitions"/>
-  <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/datasets" alt="Datasets"/>
-  <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/notebooks" alt="Notebooks"/>
-  <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/discussion" alt="Discussion"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competitions">
+    <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/competitions/light" alt="Competitions"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/datasets">
+    <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/datasets/light" alt="Datasets"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/notebooks">
+    <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/notebooks/light" alt="Notebooks"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/discussion">
+    <img src="https://road-to-kaggle-grandmaster.vercel.app/api/badges/enddl22/discussion/light" alt="Discussion"/>
+  </picture>
 </p>
 
 Kaggle is one of my favourite playgrounds for exploring new ML ideas on real-world data. Full profile → [kaggle.com/enddl22](https://www.kaggle.com/enddl22).
@@ -84,13 +96,21 @@ Kaggle is one of my favourite playgrounds for exploring new ML ideas on real-wor
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=inkyusa&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&title_color=0969da&icon_color=0969da&text_color=1f2328&bg_color=ffffff#gh-light-mode-only" alt="GitHub stats (light)"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=inkyusa&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=github_dark#gh-dark-mode-only" alt="GitHub stats (dark)"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=inkyusa&layout=compact&hide_border=true&title_color=0969da&text_color=1f2328&bg_color=ffffff#gh-light-mode-only" alt="Top languages (light)"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=inkyusa&layout=compact&hide_border=true&theme=github_dark#gh-dark-mode-only" alt="Top languages (dark)"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github_stats_dark.png">
+    <img src="./assets/github_stats_light.png" alt="GitHub stats" width="560"/>
+  </picture>
+</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github_langs_dark.png">
+    <img src="./assets/github_langs_light.png" alt="Top languages" width="420"/>
+  </picture>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=inkyusa&hide_border=true&background=FFFFFF&stroke=0969DA&ring=0969DA&fire=FF5E5E&currStreakLabel=0969DA&sideLabels=1F2328&currStreakNum=1F2328&sideNums=1F2328&dates=656D76#gh-light-mode-only" alt="Streak (light)"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=inkyusa&theme=github-dark&hide_border=true#gh-dark-mode-only" alt="Streak (dark)"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=inkyusa&theme=github-dark&hide_border=true">
+    <img src="https://streak-stats.demolab.com/?user=inkyusa&hide_border=true&background=FFFFFF&stroke=0969DA&ring=0969DA&fire=FF5E5E&currStreakLabel=0969DA&sideLabels=1F2328&currStreakNum=1F2328&sideNums=1F2328&dates=656D76" alt="Streak"/>
+  </picture>
 </p>
