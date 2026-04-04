@@ -35,6 +35,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_github_stats.py
 
+      - name: Render Kaggle cards
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: python scripts/update_kaggle.py
+
       - name: Commit changes
         run: |
           git config user.name  "github-actions[bot]"
