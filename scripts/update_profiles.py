@@ -1,9 +1,8 @@
-"""Weekly updater: captures screenshots of Google Scholar and Kaggle profiles
-and rewrites the README image references + "updated on" lines.
+"""Weekly updater: captures a screenshot of the Kaggle profile and refreshes
+the "as of ..." date in the README.
 
-Each capture is best-effort: if one site blocks us (e.g. Google consent wall
-or Kaggle layout change), we log the failure, keep the existing image, and
-still update whatever succeeded.
+The Google Scholar image is served live by the vercel-citations API, so it
+does not need a committed snapshot.
 
 Usage:
     python scripts/update_profiles.py
@@ -23,50 +22,14 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
 README = ROOT / "README.md"
 
-SCHOLAR_URL = (
-    "https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en"
-)
 KAGGLE_URL = "https://www.kaggle.com/enddl22"
-
-SCHOLAR_IMG = ASSETS / "google_scholar_profile.png"
 KAGGLE_IMG = ASSETS / "kg_profile.png"
-
-
-def _dismiss_google_consent(page) -> None:
-    """Click through Google's consent interstitial if it appears."""
-    try:
-        # The consent page redirects to consent.google.com.
-        if "consent" in page.url:
-            for label in ("I agree", "Accept all", "Alle akzeptieren"):
-                btn = page.get_by_role("button", name=label)
-                if btn.count():
-                    btn.first.click()
-                    page.wait_for_load_state("domcontentloaded")
-                    break
-    except Exception:
-        pass
-
-
-def _capture_scholar(page) -> bool:
-    try:
-        page.goto(SCHOLAR_URL, wait_until="domcontentloaded", timeout=60_000)
-        _dismiss_google_consent(page)
-        locator = page.locator("#gsc_rsb")
-        locator.wait_for(state="visible", timeout=20_000)
-        locator.screenshot(path=str(SCHOLAR_IMG))
-        print("[scholar] captured")
-        return True
-    except Exception as exc:  # noqa: BLE001
-        print(f"[scholar] skipped: {exc}")
-        traceback.print_exc()
-        return False
 
 
 def _capture_kaggle(page) -> bool:
     try:
         page.set_viewport_size({"width": 1280, "height": 900})
         page.goto(KAGGLE_URL, wait_until="domcontentloaded", timeout=60_000)
-        # Kaggle is an SPA; give it a beat to hydrate.
         try:
             page.wait_for_load_state("networkidle", timeout=15_000)
         except PWTimeout:
@@ -90,25 +53,14 @@ def _update_readme(today: _dt.date) -> None:
         human = today.strftime("%b/%#d/%Y")
     else:
         human = today.strftime("%b/%-d/%Y")
-
-    text = re.sub(
-        r"\./assets/google_scholar_profile[^\"\)\s]*\.png",
-        "./assets/google_scholar_profile.png",
-        text,
-    )
-    text = re.sub(
-        r"\(updated on [^)]*\)",
-        f"(updated on {human})",
-        text,
-        count=1,
-    )
-    text = re.sub(
+    new_text = re.sub(
         r"(as of )[A-Za-z]+/\d+/\d{4}",
         rf"\g<1>{human}",
         text,
         count=1,
     )
-    README.write_text(text)
+    if new_text != text:
+        README.write_text(new_text)
 
 
 def main() -> int:
@@ -125,13 +77,11 @@ def main() -> int:
             locale="en-US",
         )
         page = context.new_page()
-        scholar_ok = _capture_scholar(page)
-        kaggle_ok = _capture_kaggle(page)
+        ok = _capture_kaggle(page)
         browser.close()
 
     _update_readme(_dt.date.today())
-    # Exit 0 even on partial failure; workflow will just commit what changed.
-    print(f"done (scholar={scholar_ok}, kaggle={kaggle_ok})")
+    print(f"done (kaggle={ok})")
     return 0
 
 

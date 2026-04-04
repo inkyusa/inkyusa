@@ -13,9 +13,7 @@ My interests are Field Robotics, Applied machine learning, Large-language models
   
 ### [My Google Scholar Citations](https://scholar.google.com.au/citations?user=KxJU37kAAAAJ&hl=en)
 
-<p align="left"> <img src="./assets/google_scholar_profile.png" alt="Citation History" width="300"/> </p>
-
-(updated on Nov/7/2025)
+<p align="left"> <img src="https://vercel-citations.vercel.app/api/simple?id=KxJU37kAAAAJ" alt="Citation History" width="600"/> </p>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=inkyusa&label=Profile%20views&color=0e75b6&style=flat-square" alt="inkyusa" /> </p>
 
@@ -43,9 +41,6 @@ I hope you enjoy Kaggle as much as I do!
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=inkyusa&theme=dark" alt="inkyusa" /></p>
 
-<!--
-<p align="left"> <img src="https://vercel-citations.vercel.app/api/simple?id=KxJU37kAAAAJ" alt="Citation History" width="600"/> </p>
--->
 
 
 <!--
