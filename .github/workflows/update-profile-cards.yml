@@ -24,18 +24,21 @@ jobs:
           pip install -r scripts/requirements.txt
 
       - name: Render Scholar cards
+        continue-on-error: true
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           SCHOLAR_AUTHOR: KxJU37kAAAAJ
         run: python scripts/update_scholar.py
 
       - name: Render GitHub stats cards
+        continue-on-error: true
         env:
           GITHUB_USER: inkyusa
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_github_stats.py
 
       - name: Render Kaggle cards
+        continue-on-error: true
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
